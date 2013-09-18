@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<root>
+	<devicevendordef>
+		<vendorname>APPLE</vendorname>
+		<vendorid>0x05ac</vendorid>
+	</devicevendordef>
+	<deviceproductdef>
+		<productname>INTERNAL</productname>
+		<productid>0x0246</productid>
+	</deviceproductdef>
+
+	<devicevendordef>
+		<vendorname>MOTOROLA</vendorname>
+		<vendorid>0x22b8</vendorid>
+	</devicevendordef>
+	<deviceproductdef>
+		<productname>BT_WIRELESS_KB</productname>
+		<productid>0x093d</productid>
+	</deviceproductdef>
+
+	<!--item>
+		<name>Private: Section(§) to Forward Delete on Apple internal</name>
+		<identifier>private.apple_internal_onlye_section_to_fwd_delete</identifier>
+		<device_only>DeviceVendor::APPLE, DeviceProduct::INTERNAL</device_only>
+		<autogen>__KeyToKey__ KeyCode::DANISH_DOLLAR, KeyCode::FORWARD_DELETE</autogen>
+	</item-->
+
+	<item>
+		<name>Private: Motorola Bluetooth Wireless Keyboard all fixes, UK layout with UK Apple internal</name>
+		<identifier>private.motobt_all_fixes</identifier>
+		<device_only>DeviceVendor::MOTOROLA, DeviceProduct::BT_WIRELESS_KB</device_only>
+			<autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::COMMAND_R</autogen>
+			<autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::COMMAND_L</autogen>
+
+			<!--autogen>
+				__KeyToKey__
+				KeyCode::DANISH_DOLLAR, ModifierFlag::SHIFT_L,
+				KeyCode::BACKSLASH, ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen>
+				__KeyToKey__
+				KeyCode::DANISH_DOLLAR, ModifierFlag::SHIFT_R,
+				KeyCode::BACKSLASH, ModifierFlag::SHIFT_R
+			</autogen-->
+
+			<autogen>
+				__KeyToKey__
+				KeyCode::BACKSLASH, ModifierFlag::SHIFT_L,
+				KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen>
+				__KeyToKey__
+				KeyCode::BACKSLASH, ModifierFlag::SHIFT_R,
+				KeyCode::BACKQUOTE, ModifierFlag::SHIFT_R
+			</autogen>
+
+			<!--autogen>
+				__KeyToKey__ 
+				KeyCode::DANISH_DOLLAR,
+				KeyCode::BACKSLASH
+			</autogen-->
+
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::BACKSLASH,
+				KeyCode::KEY_3, ModifierFlag::OPTION_L
+			</autogen>
+
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::QUOTE, ModifierFlag::SHIFT_L,
+				KeyCode::KEY_2, ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::QUOTE, ModifierFlag::SHIFT_R,
+				KeyCode::KEY_2, ModifierFlag::SHIFT_R
+			</autogen>
+
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::KEY_2, ModifierFlag::SHIFT_L,
+				KeyCode::QUOTE, ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::KEY_2, ModifierFlag::SHIFT_R,
+				KeyCode::QUOTE, ModifierFlag::SHIFT_R
+			</autogen>
+	</item>
+	<item>
+		<name>Private: Motorola Bluetooth Wireless Keyboard, UK layout with UK Apple internal</name>
+		<item>
+			<name>Search to left cmd</name>
+			<identifier>private.motobt_search_to_cmd</identifier>
+			<device_only>DeviceVendor::MOTOROLA, DeviceProduct::BT_WIRELESS_KB</device_only>
+			<autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::COMMAND_R</autogen>
+			<autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::COMMAND_L</autogen>
+		</item>
+		<!--item>
+			<name>Section(§) to Forward Delete on Apple internal</name>
+			<identifier>private.apple_internal_section_to_fwd_delete</identifier>
+			<device_only>DeviceVendor::APPLE, DeviceProduct::INTERNAL</device_only>
+			<autogen>__KeyToKey__ KeyCode::DANISH_DOLLAR, KeyCode::FORWARD_DELETE</autogen>
+		</item-->
+		<!--item>
+			<name>Fix pipe(|) symbol</name>
+			<identifier>private.motobt_fix_pipe</identifier>
+			<device_only>DeviceVendor::MOTOROLA, DeviceProduct::BT_WIRELESS_KB</device_only>
+			<autogen>
+				__KeyToKey__
+				KeyCode::DANISH_DOLLAR, ModifierFlag::SHIFT_L,
+				KeyCode::BACKSLASH, ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen>
+				__KeyToKey__
+				KeyCode::DANISH_DOLLAR, ModifierFlag::SHIFT_R,
+				KeyCode::BACKSLASH, ModifierFlag::SHIFT_R
+			</autogen>
+		</item-->
+		<item>
+			<name>Fix tilde(~)</name>
+			<identifier>private.motobt_fix_tilde</identifier>
+			<device_only>DeviceVendor::MOTOROLA, DeviceProduct::BT_WIRELESS_KB</device_only>
+			<autogen>
+				__KeyToKey__
+				KeyCode::BACKSLASH, ModifierFlag::SHIFT_L,
+				KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen>
+				__KeyToKey__
+				KeyCode::BACKSLASH, ModifierFlag::SHIFT_R,
+				KeyCode::BACKQUOTE, ModifierFlag::SHIFT_R
+			</autogen>
+		</item>
+		<!--item>
+			<name>Fix backslash(\)</name>
+			<identifier>private.motobt_fix_backslash</identifier>
+			<device_only>DeviceVendor::MOTOROLA, DeviceProduct::BT_WIRELESS_KB</device_only>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::DANISH_DOLLAR,
+				KeyCode::BACKSLASH
+			</autogen>
+		</item-->
+		<item>
+			<name>Fix backslash(#)</name>
+			<identifier>private.motobt_fix_hash</identifier>
+			<device_only>DeviceVendor::MOTOROLA, DeviceProduct::BT_WIRELESS_KB</device_only>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::BACKSLASH,
+				KeyCode::KEY_3, ModifierFlag::OPTION_L
+			</autogen>
+		</item>
+		<item>
+			<name>Fix at(@)</name>
+			<identifier>private.motobt_fix_at</identifier>
+			<device_only>DeviceVendor::MOTOROLA, DeviceProduct::BT_WIRELESS_KB</device_only>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::QUOTE, ModifierFlag::SHIFT_L,
+				KeyCode::KEY_2, ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::QUOTE, ModifierFlag::SHIFT_R,
+				KeyCode::KEY_2, ModifierFlag::SHIFT_R
+			</autogen>
+		</item>
+		<item>
+			<name>Fix double quote(")</name>
+			<identifier>private.motobt_fix_doublequote</identifier>
+			<device_only>DeviceVendor::MOTOROLA, DeviceProduct::BT_WIRELESS_KB</device_only>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::KEY_2, ModifierFlag::SHIFT_L,
+				KeyCode::QUOTE, ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::KEY_2, ModifierFlag::SHIFT_R,
+				KeyCode::QUOTE, ModifierFlag::SHIFT_R
+			</autogen>
+		</item>
+	</item>
+</root>
+
